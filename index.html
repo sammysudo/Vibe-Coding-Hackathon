@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrackMyShop 💰</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>TrackMyShop 💰</h1>
+        </header>
+        
+        <main>
+            <section class="intro">
+                <p>Track your daily sales and expenses with voice commands! Simply tap the microphone button and say something like:</p>
+                <ul class="examples">
+                    <li>"I sold 5 bags of rice at $2 each today"</li>
+                    <li>"I bought 10 bottles of water for $15"</li>
+                    <li>"I earned $50 from selling vegetables"</li>
+                </ul>
+            </section>
+
+            <section class="voice-section">
+                <button id="voiceBtn" class="voice-button">
+                    <i class="fas fa-microphone"></i>
+                    Use Voice
+                </button>
+                <div id="status" class="status-text">Ready to listen...</div>
+            </section>
+
+            <section class="results">
+                <div class="result-card">
+                    <h3><i class="fas fa-comment"></i> What You Said</h3>
+                    <div id="userSpeech" class="speech-text">
+                        Your voice input will appear here...
+                    </div>
+                </div>
+
+                <div class="result-card">
+                    <h3><i class="fas fa-receipt"></i> Transaction Summary</h3>
+                    <div id="transactionSummary" class="transaction-details">
+                        Transaction details will appear here...
+                    </div>
+                </div>
+            </section>
+
+            <section class="recent-transactions">
+                <h3><i class="fas fa-history"></i> Recent Transactions</h3>
+                <div id="recentList" class="transaction-list">
+                    No transactions yet. Start by recording your first sale or expense!
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 TrackMyShop - Helping small traders succeed</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
